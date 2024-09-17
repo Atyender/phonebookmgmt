@@ -223,12 +223,14 @@ def main():
             phonebook.update_contact(first_name, last_name, new_contact)
 
         elif choice == '6':
+            # Delete a contact by name
             first_name = input("Enter first name of the contact to delete: ")
             last_name = input("Enter last name of the contact to delete: ")
             phonebook.delete_contact(first_name, last_name)
 
 
         elif choice == '7':
+            # Delete multiple contacts by name
             names = input("Enter names to delete (comma-separated, e.g., John Cena, Tom Cruise): ").split(',')
             phonebook.delete_contacts_in_batch(names)
 
